@@ -1,0 +1,104 @@
+main
+    width: 100%
+    text-align: center
+    justify-content: center
+    margin: 5em auto 0 auto
+    background-repeat: no-repeat
+    background-position: top
+    display: flex
+    background-size: cover
+    height: 500px
+    background-image: linear-gradient(to right, rgba(90, 90, 90, 0.733), rgba(112, 112, 112, 0.699)), url("../img/header/cup-of-coffee-g403024982_1920.jpg")
+
+    .span
+        text-align: center
+        display: flex
+        flex-direction: column
+        padding: 3em
+        align-items: center
+        justify-content: center
+        
+
+main h1
+    font-family: $montse 
+    font-size: 1.7em
+    font-weight: bolder
+    color: #ffff
+    padding-bottom: 1em
+
+main p
+    font-size: .7em
+    font-family: $poppi
+    color: #cecece
+    margin-bottom: 1.7em
+
+@media screen and ( min-width: 450px )
+    main h1 
+        font-size: 2em
+        padding-bottom: .5em
+
+    main p 
+        font-size: .8em
+        
+@media screen and ( min-width: 600px )
+    main p 
+        font-size: .84em
+
+@media screen and ( min-width: 800px )
+    main 
+        display: flex
+        .span
+            z-index: 3
+
+    main h1 
+        font-size: 1.8em
+        width: 100%
+
+    main p
+        width: 95% 
+        font-size: .67em
+    
+    //     position: relative
+    //     z-index: 3
+    //     top: -.5em
+    //     left: -2em
+    //     -webkit-animation: move-vector 4.6s ease-in-out infinite
+    //     animation: move-vector 6s ease-in-out infinite     
+        
+    // @keyframes move-vector
+    //         0%
+    //           transform: translatex(30px)  
+    //         25%
+    //             transform: translatex(-30px)
+    //         100%
+    //             transform: translatex(30px)  
+
+    
+
+@media screen and ( min-width: 960px )
+    main h1 
+        font-size: 2em
+
+    main p
+        font-size: .9em
+        margin-bottom: 2.6em
+
+@media screen and ( min-width: 1000px )
+    main   
+        margin: 6em auto 0 auto
+
+
+@media screen and ( min-width: 1225px )
+        main h1
+            font-size: 2.2em
+            font-weight: 700
+
+        main p
+            font-size: .94em
+            width: 60%
+
+
+  
+                
+                
+

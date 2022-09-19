@@ -1,0 +1,63 @@
+@import _variables
+@import _nav
+@import _section
+@import _article
+@import _footer
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    scroll-behavior: smooth
+
+a
+    text-decoration: none
+    
+
+li
+    list-style: none
+
+body
+    display: flex
+    height: 100vh
+    flex-direction: column
+    background: #ffffff
+
+.enfasis
+    color: $red
+
+.btn
+    background: $red
+    color: #fff
+    padding: .9em 2em
+    transition: .7s
+    border-radius: 2rem
+    font-family: $poppi
+    width: 150px
+    cursor: pointer
+    font-weight: light
+    &:hover
+        box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 18px 0 rgba(0, 0, 0, 0.19)
+
+    &:active
+        opacity: .3
+
+.container
+    max-width: 1400px
+    margin: auto
+        
+.btn-card
+    background: #fff
+    position: absolute
+    font-family: $poppi
+    font-size: .9em
+    margin-top: 10em
+    margin-right: 12em
+    padding: .7em
+    cursor: pointer
+    border-radius: .5em
+    &:hover
+        opacity: .8
+

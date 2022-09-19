@@ -1,0 +1,83 @@
+section .card-container
+    width: 95%
+    margin: 7em auto .5em auto
+    img
+        width: 100%
+        border-radius: 25px
+
+section .card
+    display: flex
+    width: 90%
+    flex-direction: column
+    margin: auto
+    align-items: center
+    padding: 2.3em 0
+    &:nth-child(2)
+        flex-direction: column-reverse
+        img
+            padding-top: .9em
+        h1
+            padding: 0
+    &:nth-child(4)
+        flex-direction: column-reverse
+        img
+            padding-top: .9em
+        h1
+            padding: 0
+        
+section .span h1
+        color: $gray
+        padding-top: .8em
+        font-family: $poppi
+        font-size: 1.2em
+
+section .span p
+    font-family: $montse
+    font-size: .94em
+    padding-top: .8em
+    color: #363636
+    line-height: 1.5em
+
+
+@media screen and ( min-width: 900px )
+    section .card-container
+        width: 100%
+
+    section .card
+        flex-direction: row
+        justify-content: center
+        align-items: flex-start
+        width: 100%
+        padding: 2em
+        &:nth-child(2)
+            flex-direction: row-reverse
+            background: #00000007
+            img
+                padding-top: 0
+            h1
+                text-align: end    
+        &:nth-child(4)
+            flex-direction: row-reverse
+            background: #00000007
+            img
+                padding-top: 0
+            h1
+                text-align: end    
+        
+    section .span 
+        padding: 0 1.5em
+        p
+            text-align: justify
+        h1
+            font-size: 1.3em
+
+        
+    section .card-container img
+        width: 30%
+
+@media screen and ( min-width: 1000px )
+    section .card-container
+        margin: 7em auto .5em auto
+
+
+        

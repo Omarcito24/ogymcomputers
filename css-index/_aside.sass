@@ -1,0 +1,61 @@
+.aside-container
+    margin-top: 4em
+    background-color: hsl(0, 0%, 90%)
+    width: 100%
+    height: 300px
+    font-family: $poppi
+    cursor: pointer
+
+.aside-span
+    display: flex
+    flex-direction: column
+    flex-wrap: nowrap
+    align-items: center
+    align-content: center
+    height: 230px
+    justify-content: center
+    width: 100%
+
+
+.aside-img
+    width: 60px
+    height: 70px
+    transition: .5s
+    margin-top: 4em
+
+.aside-tittle
+    font-size: 2em
+    text-align: center
+    font-weight:  bold
+    margin-top: .5em
+
+.aside-p
+    text-align: center
+    margin-top: 1.3em
+    color: $gray
+
+.aside-btn
+    margin-top: 2em
+    transition: .5s
+    &:hover
+      border-radius: .5em
+
+.enfasis-hover
+    transition: .4s
+
+.aside-container:hover .aside-img
+    transform: scale(1.3)
+
+.aside-container:hover .enfasis-hover
+    color: $red
+
+
+@media screen and ( max-width: 430px  )
+    .aside-tittle
+        width: 100%
+        font-size: 1.5em
+
+    .aside-p
+        font-size: .9em
+        
+    
